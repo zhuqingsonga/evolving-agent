@@ -1,13 +1,13 @@
 ---
 name: evolving-agent
-description: 自我进化Agent - 基于进化论的混合进化策略，结合达尔文式探索与拉马克式优化，支持种群进化、精英保留、交叉重组。集成protea的三环架构、基因库、技能结晶化，以及rotifer的模块化能力、竞技场思路。Self-evolving agent with hybrid evolutionary strategy: Darwinian exploration + Lamarckian optimization, population evolution, elitism, and crossover. Integrates protea's three-ring architecture, gene pool, skill crystallization, and rotifer's modular capabilities, arena thinking. 自我进化、进化论、种群进化、精英保留、交叉重组、达尔文进化、拉马克进化、发散推理、收敛验证、适应度评分、基因库、skill结晶、进化策略、agent进化、智能体进化、自主进化、持续进化、三环架构、模块化能力、竞技场、protea、rotifer、evolutionary agent、Darwinian evolution、Lamarckian evolution、population-based evolution、elitism、crossover、self-evolution、continuous improvement、three-ring architecture、modular capabilities、arena competition。
+description: 自我进化Agent - 基于进化论的混合进化策略，结合达尔文式探索与拉马克式优化，支持种群进化、精英保留、交叉重组。Self-evolving agent with hybrid evolutionary strategy: Darwinian exploration + Lamarckian optimization, population evolution, elitism, and crossover. 自我进化、进化论、种群进化、精英保留、交叉重组、达尔文进化、拉马克进化、发散推理、收敛验证、适应度评分、基因库、skill结晶、进化策略、agent进化、智能体进化、自主进化、持续进化、三环架构、模块化能力、竞技场、evolutionary agent、Darwinian evolution、Lamarckian evolution、population-based evolution、elitism、crossover、self-evolution、continuous improvement、three-ring architecture、modular capabilities、arena competition。
 ---
 
 # 自我进化Agent - Evolving Agent
 
-基于进化论的混合进化策略，结合达尔文式探索与拉马克式优化，集成protea和rotifer的核心思想。
+基于进化论的混合进化策略，结合达尔文式探索与拉马克式优化。
 
-Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian exploration and Lamarckian optimization, integrating core ideas from protea and rotifer.
+Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian exploration and Lamarckian optimization.
 
 ---
 
@@ -17,8 +17,6 @@ Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian e
 **进化哲学**：混合进化论 - 达尔文式探索 + 拉马克式优化  
 **安全原则**：分级确认，用户在循环中  
 **设计灵感**：
-- **protea**：三环架构、基因库、技能结晶化、适应度评分
-- **rotifer**：模块化能力、竞技场思路、客观数据驱动
 - **经典进化论**：种群、变异、选择、遗传、交叉、精英保留
 - **公开论文**：自我反思、提示优化、多agent协同
 
@@ -26,8 +24,6 @@ Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian e
 **Evolution Philosophy**: Hybrid evolution - Darwinian exploration + Lamarckian optimization  
 **Safety Principle**: Tiered confirmation, human-in-the-loop  
 **Design Inspirations**:
-- **protea**: Three-ring architecture, gene pool, skill crystallization, fitness scoring
-- **rotifer**: Modular capabilities, arena thinking, objective data-driven
 - **Classical Evolution Theory**: Population, variation, selection, heredity, crossover, elitism
 - **Publications**: Self-reflection, prompt optimization, multi-agent collaboration
 
@@ -36,20 +32,16 @@ Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian e
 ## 混合进化策略 - Hybrid Evolution Strategy
 
 ### 达尔文式探索（Darwinian Exploration）
-- **来源**：protea + 经典进化论
 - **特点**：发散推理，产生多个方案，随机变异，探索未知
 - **适合**：发现新方法、突破性创新
 
-- **Source**: protea + classical evolution theory
 - **Characteristics**: Divergent reasoning, generate multiple candidates, random variation, explore unknown
 - **Suitable for**: Discovering new approaches, breakthrough innovations
 
 ### 拉马克式优化（Lamarckian Optimization）
-- **来源**：rotifer + 拉马克主义
 - **特点**：基于反馈，优化现有方案，获得性特征遗传
 - **适合**：改进已知方法、效率提升
 
-- **Source**: rotifer + Lamarckism
 - **Characteristics**: Feedback-based, optimize existing solutions, inheritance of acquired characteristics
 - **Suitable for**: Improving known approaches, efficiency gains
 
@@ -85,10 +77,10 @@ Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian e
                  │
 ┌────────────────▼────────────────────────────────────────────────┐
 │ Ring 2（Gene Pool Layer）- 基因库层                          │
-│ - 分级记忆（Hot→Warm→Cold→Forgotten，借鉴protea）              │
+│ - 分级记忆（Hot→Warm→Cold→Forgotten）                          │
 │ - 精英模式库（Elite Pattern Pool）                               │
-│ - 基因库（Gene Pool，借鉴protea）                               │
-│ - 技能结晶化（Skill Crystallization，借鉴protea）              │
+│ - 基因库（Gene Pool）                                           │
+│ - 技能结晶化（Skill Crystallization）                            │
 └────────────────┬────────────────────────────────────────────────┘
                  │
 ┌────────────────▼────────────────────────────────────────────────┐
@@ -100,7 +92,7 @@ Self-evolving agent based on hybrid evolutionary strategy, combining Darwinian e
 └────────────────┬────────────────────────────────────────────────┘
                  │
 ┌────────────────▼────────────────────────────────────────────────┐
-│ Ring 0（Sentinel Layer）- 哨兵层（不可变，借鉴protea）    │
+│ Ring 0（Sentinel Layer）- 哨兵层（不可变）                   │
 │ - Git版本控制 + 自动快照                                          │
 │ - 操作审计日志                                                    │
 │ - 回滚机制（Rollback）                                            │
@@ -155,8 +147,8 @@ Ring 1: Divergent reasoning (variation)
   - Generate N candidate solutions (N=3~5, population)
   - 每个方案都有差异（多样性）
   - Each solution has differences (diversity)
-  - 注入基因库中的成功模式（借鉴protea）
-  - Inject successful patterns from gene pool (inspired by protea)
+  - 注入基因库中的成功模式
+  - Inject successful patterns from gene pool
     ↓
 Ring 3：交叉重组（可选）
 Ring 3: Crossover (optional)
@@ -206,27 +198,24 @@ Ring 2: Memory heredity
 
 ---
 
-## 多目标适应度评分（6维度，借鉴protea + 实用化）- Multi-Objective Fitness Scoring (6 dimensions, inspired by protea + practical)
+## 多目标适应度评分（6维度）- Multi-Objective Fitness Scoring (6 dimensions)
 
 ### 评分维度 - Scoring Dimensions
 
-| 维度 Dimension | 权重 Weight | 说明 Description | protea对应 protea equivalent | rotifer对应 rotifer equivalent |
-|------|------|------|-----------|------------|
-| **1. 可行性 Feasibility** | 25% | 方案是否能安全执行 Can solution be executed safely | 生存 Survival | S_r（生存） |
-| **2. 效果预期 Expected Impact** | 25% | 预期能带来多大改进 Expected improvement | 输出/功能 Output/Function | C_util（利用率） |
-| **3. 风险等级 Risk Level** | 20% | 低/中/高风险（越低越好） Low/Medium/High (lower is better) | 结构 Structure | R_rob（健壮性） |
-| **4. 实现成本 Implementation Cost** | 15% | 时间/精力成本（越低越好） Time/energy cost (lower is better) | - | L（延迟） |
-| **5. 创新性 Novelty** | 10% | 是否有新想法/新模式 New ideas/patterns? | 多样性/新颖性 Diversity/Novelty | - |
-| **6. 可回滚性 Rollback Safety** | 5% | 出问题能否轻松回滚 Easy to rollback? | - | Resource_Cost |
+| 维度 Dimension | 权重 Weight | 说明 Description |
+|------|------|------|
+| **1. 可行性 Feasibility** | 25% | 方案是否能安全执行 Can solution be executed safely |
+| **2. 效果预期 Expected Impact** | 25% | 预期能带来多大改进 Expected improvement |
+| **3. 风险等级 Risk Level** | 20% | 低/中/高风险（越低越好） Low/Medium/High (lower is better) |
+| **4. 实现成本 Implementation Cost** | 15% | 时间/精力成本（越低越好） Time/energy cost (lower is better) |
+| **5. 创新性 Novelty** | 10% | 是否有新想法/新模式 New ideas/patterns? |
+| **6. 可回滚性 Rollback Safety** | 5% | 出问题能否轻松回滚 Easy to rollback? |
 
-### 评分公式（融合protea + rotifer）- Scoring Formula (combining protea + rotifer)
+### 评分公式 - Scoring Formula
 
 ```
 Fitness = (Feasibility×0.25) + (ExpectedImpact×0.25) + (1-RiskLevel)×0.20
         + (1-ImplementationCost)×0.15 + Novelty×0.10 + RollbackSafety×0.05
-
-Inspired by protea: 6-dimensional scoring
-Inspired by rotifer: Objective data-driven approach
 ```
 
 ### 风险等级定义（分级确认）- Risk Level Definitions (Tiered Confirmation)
@@ -239,14 +228,14 @@ Inspired by rotifer: Objective data-driven approach
 
 ---
 
-## 基因库系统（Gene Pool，借鉴protea）- Gene Pool System (inspired by protea)
+## 基因库系统（Gene Pool）- Gene Pool System
 
 ### 什么是基因库？- What is Gene Pool?
-- 存储Top 100成功模式的SQLite数据库（借鉴protea）
+- 存储Top 100成功模式的SQLite数据库
 - 注入到进化提示中，指导LLM生成新方案
 - 跨代遗传，保留优秀特征
 
-- SQLite database storing Top 100 successful patterns (inspired by protea)
+- SQLite database storing Top 100 successful patterns
 - Injected into evolution prompts to guide LLM generating new solutions
 - Cross-generational heredity, preserves good characteristics
 
@@ -257,7 +246,7 @@ Inspired by rotifer: Objective data-driven approach
 4. **Prompt优化基因 Prompt Optimization Gene** - 有效的提示词技巧
 5. **安全操作基因 Safe Operation Gene** - 如何安全地执行操作
 
-### 基因入库标准（借鉴protea的适应度）- Gene Admission Criteria (fitness inspired by protea)
+### 基因入库标准 - Gene Admission Criteria
 - ✅ 被用户选择并成功执行 Selected by user and executed successfully
 - ✅ 适应度评分前100 Top 100 in fitness score
 - ✅ 可复用性强 Highly reusable
@@ -284,7 +273,7 @@ Inspired by rotifer: Objective data-driven approach
 
 ---
 
-## 技能结晶化（Skill Crystallization，借鉴protea）- Skill Crystallization (inspired by protea)
+## 技能结晶化（Skill Crystallization）- Skill Crystallization
 
 ### 什么是技能结晶？- What is Skill Crystallization?
 - 把反复验证的成功经验变成独立的skill
@@ -309,7 +298,7 @@ Inspired by rotifer: Objective data-driven approach
 
 ---
 
-## 分级记忆系统（Tiered Memory，借鉴protea）- Tiered Memory System (inspired by protea)
+## 分级记忆系统（Tiered Memory）- Tiered Memory System
 
 ```
 Hot（热记忆）- 当前会话
@@ -334,7 +323,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 竞技场思路（Arena Thinking，借鉴rotifer）- Arena Thinking (inspired by rotifer)
+## 竞技场思路（Arena Thinking）- Arena Thinking
 
 ### 什么是竞技场？- What is Arena?
 - 同一任务的多个方案之间"竞争"
@@ -353,7 +342,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 模块化能力思路（借鉴rotifer）- Modular Capability Thinking (inspired by rotifer)
+## 模块化能力思路 - Modular Capability Thinking
 
 ### 能力模块定义 - Capability Module Definition
 - 每个skill都是一个独立的"能力模块"
@@ -386,11 +375,11 @@ Forgotten - But still in Git history and gene pool
 ### 2. 创建新的Skill - Create New Skills
 - 根据用户需求设计新skill
 - 结晶化成功经验
-- 从ClawHub搜索安装（借鉴rotifer）
+- 从ClawHub搜索安装
 
 - Design new skills based on user needs
 - Crystallize successful experiences
-- Search and install from ClawHub (inspired by rotifer)
+- Search and install from ClawHub
 
 ### 3. 优化工作流 - Optimize Workflows
 - 改进任务执行流程
@@ -421,7 +410,7 @@ Forgotten - But still in Git history and gene pool
 - Gene pool updates and retirement
 - Forgetting no-longer-needed content
 
-### 6. 能力模块管理（借鉴rotifer）- Capability Module Management (inspired by rotifer)
+### 6. 能力模块管理 - Capability Module Management
 - 评估现有能力模块
 - 搜索更好的替代模块
 - 安装新的能力模块
@@ -492,7 +481,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 📊 竞技场排名（借鉴rotifer）- Arena Ranking (inspired by rotifer)
+## 📊 竞技场排名 - Arena Ranking
 
 | 排名 Rank | 方案 Solution | 可行性 Feasibility | 效果预期 Expected Impact | 风险 Risk | 成本 Cost | 创新 Novelty | 可回滚 Rollback | 总分 Total |
 |------|------|--------|---------|------|------|------|--------|------|
@@ -502,7 +491,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 🧬 基因库注入说明（借鉴protea）- Gene Pool Injection Notes (inspired by protea)
+## 🧬 基因库注入说明 - Gene Pool Injection Notes
 - 本次进化使用了基因库中的X个基因 X genes from gene pool used in this evolution
 - Top 3基因 Top 3 genes：XX、XX、XX
 - 是否有新基因候选入库？Any new gene candidates for admission?
@@ -538,7 +527,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 🛡️ 安全保障（借鉴protea的Ring0）- Safety Guarantees (inspired by protea's Ring0)
+## 🛡️ 安全保障 - Safety Guarantees
 - ✅ Git快照已创建（SHA：xxx）Git snapshot created (SHA: xxx)
 - ✅ 所有操作可回滚 All operations rollbackable
 - ✅ 审计日志将被记录 Audit log will be recorded
@@ -578,14 +567,14 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 🧬 基因库更新（借鉴protea）- Gene Pool Update (inspired by protea)
+## 🧬 基因库更新 - Gene Pool Update
 - 新基因候选入库 New gene candidates admitted：X个
 - 是否进入精英模式库 Enter elite pattern pool?：是/否 Yes/No（原因 reason：xxx）
 - 基因库当前大小 Current gene pool size：X/100
 
 ---
 
-## 💎 技能结晶化选项（借鉴protea）- Skill Crystallization Options (inspired by protea)
+## 💎 技能结晶化选项 - Skill Crystallization Options
 - 是否结晶化为独立skill？Crystallize as independent skill?
   - [ ] 是 Yes（请确认 please confirm）
   - [ ] 否 No，先继续观察 continue observing first
@@ -607,7 +596,7 @@ Forgotten - But still in Git history and gene pool
 
 ---
 
-## 安全原则（必须遵守！借鉴protea + 我们的设计）- Safety Principles (Must Follow! Inspired by protea + our design)
+## 安全原则（必须遵守！）- Safety Principles (Must Follow!)
 
 ### 1. 透明（Transparency）
 - 所有操作都要让用户知道
@@ -631,7 +620,7 @@ Forgotten - But still in Git history and gene pool
 - High-risk operations require line-by-line confirmation
 - User is final decision-maker
 
-### 3. 可逆（Reversibility，借鉴protea的Ring0）
+### 3. 可逆（Reversibility）
 - 重要修改前自动Git快照
 - 提供一键回滚
 - 记录所有变更历史
